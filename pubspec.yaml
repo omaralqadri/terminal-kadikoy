@@ -71,6 +71,8 @@ flutter:
   # Assets
   assets:
     - assets/images/
+    - assets/images/splash.png
+    - assets/images/terminal_logo_black.png
     - assets/images/onboarding/
     - assets/images/onboarding/blue_indicator.png
     - assets/images/onboarding/green_indicator.png

@@ -6,9 +6,7 @@ import 'package:terminal_kadikoy/core/constants/app_constants.dart';
 import 'package:terminal_kadikoy/core/localization/app_localizations_delegate.dart';
 import 'package:terminal_kadikoy/core/providers/locale_provider.dart';
 import 'package:terminal_kadikoy/core/providers/theme_provider.dart';
-import 'package:terminal_kadikoy/core/services/onboarding_service.dart';
-import 'package:terminal_kadikoy/features/home/screens/home_screen.dart';
-import 'package:terminal_kadikoy/features/onboarding/screens/onboarding_screen.dart';
+import 'package:terminal_kadikoy/features/splash/screens/splash_screen.dart';
 
 void main() {
   runApp(
@@ -50,43 +48,8 @@ class MyApp extends ConsumerWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
 
-      // Initial route handler
-      home: const AppInitializer(),
-    );
-  }
-}
-
-/// Widget that determines which screen to show on app launch
-class AppInitializer extends StatefulWidget {
-  const AppInitializer({super.key});
-
-  @override
-  State<AppInitializer> createState() => _AppInitializerState();
-}
-
-class _AppInitializerState extends State<AppInitializer> {
-  @override
-  Widget build(BuildContext context) {
-    return FutureBuilder<bool>(
-      future: OnboardingService.isOnboardingCompleted(),
-      builder: (context, snapshot) {
-        // Show loading indicator while checking
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Scaffold(
-            body: Center(
-              child: CircularProgressIndicator(),
-            ),
-          );
-        }
-
-        // Show onboarding if not completed, otherwise show home
-        final hasCompletedOnboarding = snapshot.data ?? false;
-        if (hasCompletedOnboarding) {
-          return const HomeScreen();
-        } else {
-          return const OnboardingScreen();
-        }
-      },
+      // Initial screen - Splash Screen
+      home: const SplashScreen(),
     );
   }
 }
