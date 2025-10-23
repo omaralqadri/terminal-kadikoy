@@ -76,7 +76,7 @@ flutter:
     - assets/images/onboarding/
     - assets/images/onboarding/blue_indicator.png
     - assets/images/onboarding/green_indicator.png
-    - assets/images/onboarding/oreng_indicator.png
+    - assets/images/onboarding/orange_indicator.png
     - assets/images/onboarding/gray_indicator.png
     - assets/localization/
 

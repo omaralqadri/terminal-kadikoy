@@ -31,7 +31,7 @@ class PageIndicator extends StatelessWidget {
     } else if (index == 2) {
       // Third indicator: orange when on page 2, gray before
       return currentPage >= 2
-          ? 'assets/images/onboarding/oreng_indicator.png'
+          ? 'assets/images/onboarding/orange_indicator.png'
           : 'assets/images/onboarding/gray_indicator.png';
     }
     return 'assets/images/onboarding/gray_indicator.png';

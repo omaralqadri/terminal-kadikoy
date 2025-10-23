@@ -5,15 +5,21 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._(); // Private constructor to prevent instantiation
 
-  // Primary Colors
-  static const Color primary = Color(0xFF1976D2);
-  static const Color primaryDark = Color(0xFF1565C0);
-  static const Color primaryLight = Color(0xFF42A5F5);
+  // Terminal Kadıköy Brand Colors
+  static const Color primary = Color(0xFF0000F4); // Blue
+  static const Color primaryDark = Color(0xFF0000D4);
+  static const Color primaryLight = Color(0xFF3333F5);
 
   // Secondary Colors
-  static const Color secondary = Color(0xFFFF6F00);
-  static const Color secondaryDark = Color(0xFFE65100);
-  static const Color secondaryLight = Color(0xFFFF8F00);
+  static const Color secondary = Color(0xFFEC742E); // Orange
+  static const Color secondaryDark = Color(0xFFD4651F);
+  static const Color secondaryLight = Color(0xFFF0854A);
+
+  // Terminal Kadıköy Specific Colors
+  static const Color terminalGreen = Color(0xFF60D045);
+  static const Color terminalOrange = Color(0xFFEC742E);
+  static const Color terminalBlue = Color(0xFF0000F4);
+  static const Color lightGray = Color(0xFFE5E7EB);
 
   // Background Colors
   static const Color background = Color(0xFFF5F5F5);

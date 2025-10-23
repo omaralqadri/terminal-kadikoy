@@ -10,7 +10,7 @@ Please add the following images to this directory:
 ## Page Indicators
 4. **blue_indicator.png** - Blue indicator (32x32px)
 5. **green_indicator.png** - Green indicator (32x32px)
-6. **oreng_indicator.png** - Orange indicator (32x32px)
+6. **orange_indicator.png** - Orange indicator (32x32px)
 7. **gray_indicator.png** - Gray indicator (32x32px)
 
 ## Indicator Logic
